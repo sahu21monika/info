@@ -47,18 +47,13 @@
   justify-content: center;
 }
 
-.avatar-placeholder {
+.avatar-img {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent) 0%, #a29bfe 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  font-weight: 700;
-  color: #fff;
-  box-shadow: 0 0 60px rgba(108, 99, 255, 0.3);
+  object-fit: cover;
+  box-shadow: 0 0 60px rgba(155, 89, 182, 0.3);
+  border: 3px solid var(--accent-light);
 }
 
 @media (max-width: 700px) {
@@ -66,6 +61,6 @@
     grid-template-columns: 1fr;
   }
   .about-avatar { order: -1; }
-  .avatar-placeholder { width: 160px; height: 160px; font-size: 3.5rem; }
+  .avatar-img { width: 160px; height: 160px; }
   .about-stats { flex-wrap: wrap; gap: 20px; }
 }

@@ -1,3 +1,4 @@
+import profileImg from '../assets/Profile.png'
 import './About.css'
 
 export default function About() {
@@ -12,26 +13,17 @@ export default function About() {
             functional but delightful to use.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring new technologies, contributing to
-            open source projects, or working on side projects that solve real-world problems.
+            When I'm not coding, you'll find me exploring new technologies, or maybe watching movies or cooking.
           </p>
           <div className="about-stats">
             <div className="stat">
-              <span className="stat-number">2+</span>
+              <span className="stat-number">6+</span>
               <span className="stat-label">Years Experience</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">10+</span>
-              <span className="stat-label">Projects Built</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">5+</span>
-              <span className="stat-label">Technologies</span>
             </div>
           </div>
         </div>
         <div className="about-avatar">
-          <div className="avatar-placeholder">M</div>
+          <img src={profileImg} alt="Monika" className="avatar-img" />
         </div>
       </div>
     </section>

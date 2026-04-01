@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
 
-const links = ['About', 'Skills', 'Projects', 'Contact']
+const links = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <a className="nav-logo" href="#hero">Monika.</a>
+      <a className="nav-logo" href="#hero">Monika Sahu</a>
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
         {links.map(link => (
           <li key={link}>

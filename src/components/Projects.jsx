@@ -2,25 +2,11 @@ import './Projects.css'
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A full-stack web app that solves X problem. Built with React, Node.js, and PostgreSQL.',
-    tech: ['React', 'Node.js', 'PostgreSQL'],
-    github: '#',
-    live: '#',
-  },
-  {
-    title: 'Project Two',
-    description: 'A mobile-first dashboard for tracking Y. Features real-time updates and data visualization.',
-    tech: ['TypeScript', 'Express', 'MongoDB'],
-    github: '#',
-    live: '#',
-  },
-  {
-    title: 'Project Three',
-    description: 'An open-source tool that helps developers with Z. Used by hundreds of developers.',
-    tech: ['Python', 'REST API', 'React'],
-    github: '#',
-    live: '#',
+    title: 'Desk Manager',
+    description: 'A library desk assignment app that allows users to book desks based on available slots and days, making seat management simple and efficient.',
+    tech: ['React', 'Vite', 'JavaScript'],
+    github: 'https://github.com/sahu21monika/desk-manager',
+    live: 'https://desk-manager-eosin.vercel.app/',
   },
 ]
 

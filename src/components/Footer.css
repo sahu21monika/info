@@ -22,6 +22,6 @@
 .footer-links a:hover { color: var(--accent-light); }
 
 .footer-copy {
-  color: #555;
+  color: rgba(167, 139, 250, 0.6);
   font-size: 0.8rem;
 }

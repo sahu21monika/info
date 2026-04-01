@@ -1,9 +1,10 @@
 import './Skills.css'
 
 const skills = [
-  { category: 'Frontend', items: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['Node.js', 'Express', 'Python', 'REST APIs'] },
-  { category: 'Tools & Other', items: ['Git', 'Vite', 'PostgreSQL', 'MongoDB', 'Figma'] },
+  { category: 'Languages', items: ['JavaScript', 'TypeScript', 'Java', 'C/C++', 'Python'] },
+  { category: 'Frontend', items: ['React.js', 'Next.js', 'HTML/CSS', 'Kony (Quantum) Visualizer'] },
+  { category: 'Backend & Data', items: ['MySQL', 'REST APIs', 'Microservices', 'Kony (Quantum) Fabric'] },
+  { category: 'Tools & Practices', items: ['Git', 'Data Structures', 'Algorithms', 'Research & Development'] },
 ]
 
 export default function Skills() {

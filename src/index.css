@@ -5,13 +5,14 @@
 }
 
 :root {
-  --bg: #0f0f0f;
-  --bg-card: #1a1a1a;
-  --accent: #6c63ff;
-  --accent-light: #a29bfe;
-  --text: #e0e0e0;
-  --text-muted: #888;
-  --border: #2a2a2a;
+  --bg: #2D1B69;
+  --bg-card: rgba(255, 255, 255, 0.06);
+  --accent: #9B59B6;
+  --accent-light: #C084FC;
+  --highlight: #F0E6FF;
+  --text: #F0E6FF;
+  --text-muted: #dfe7a5;
+  --border: rgba(155, 89, 182, 0.35);
 }
 
 html {
@@ -46,7 +47,7 @@ main {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #fff;
+  color: var(--highlight);
   display: inline-block;
 }
 

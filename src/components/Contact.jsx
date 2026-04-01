@@ -45,7 +45,7 @@ export default function Contact() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="your@email.com"
+                placeholder="monika21.sahu@gmail.com"
                 value={form.email}
                 onChange={handleChange}
                 required

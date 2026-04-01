@@ -11,15 +11,15 @@
 }
 
 .navbar.scrolled {
-  background: rgba(15, 15, 15, 0.95);
+  background: rgba(45, 27, 105, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 20px rgba(155, 89, 182, 0.3);
 }
 
 .nav-logo {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--highlight);
   text-decoration: none;
   letter-spacing: -0.5px;
 }
@@ -38,7 +38,7 @@
   transition: color 0.2s;
 }
 
-.nav-links a:hover { color: #fff; }
+.nav-links a:hover { color: var(--highlight); }
 
 .hamburger {
   display: none;
@@ -71,7 +71,7 @@
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: rgba(15,15,15,0.97);
+    background: rgba(45,27,105,0.98);
     padding: 20px 0;
     text-align: center;
     gap: 0;
