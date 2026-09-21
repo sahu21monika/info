@@ -52,7 +52,7 @@
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 60px rgba(155, 89, 182, 0.3);
+  box-shadow: 0 0 60px rgba(var(--accent-rgb), 0.3);
   border: 3px solid var(--accent-light);
 }
 

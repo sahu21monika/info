@@ -70,8 +70,8 @@
 .tech-tag {
   font-size: 0.75rem;
   color: var(--accent-light);
-  background: rgba(155, 89, 182, 0.15);
-  border: 1px solid rgba(155, 89, 182, 0.35);
+  background: rgba(var(--accent-rgb), 0.15);
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
   padding: 3px 10px;
   border-radius: 20px;
 }

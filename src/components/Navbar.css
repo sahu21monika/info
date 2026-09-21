@@ -11,9 +11,9 @@
 }
 
 .navbar.scrolled {
-  background: rgba(45, 27, 105, 0.95);
+  background: rgba(var(--bg-rgb), 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(155, 89, 182, 0.3);
+  box-shadow: 0 2px 20px rgba(var(--accent-rgb), 0.3);
 }
 
 .nav-logo {
@@ -71,7 +71,7 @@
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: rgba(45,27,105,0.98);
+    background: rgba(var(--bg-rgb), 0.98);
     padding: 20px 0;
     text-align: center;
     gap: 0;

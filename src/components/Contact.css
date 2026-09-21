@@ -56,12 +56,12 @@
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(167, 139, 250, 0.5);
+  color: rgba(var(--accent-light-rgb), 0.5);
 }
 
 .contact-success {
-  background: rgba(155, 89, 182, 0.15);
-  border: 1px solid rgba(155, 89, 182, 0.4);
+  background: rgba(var(--accent-rgb), 0.15);
+  border: 1px solid rgba(var(--accent-rgb), 0.4);
   border-radius: 12px;
   padding: 32px;
   text-align: center;
