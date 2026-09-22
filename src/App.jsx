@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ChatPanel from './components/chat/ChatPanel'
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ChatPanel />
     </>
   )
 }
