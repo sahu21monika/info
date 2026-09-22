@@ -1,0 +1,45 @@
+/*
+ * Master color palette.
+ * To re-theme the whole site, edit the 5 raw palette colors below
+ * (and their -rgb twins, used for rgba()/opacity variants).
+ * Every stylesheet in the project reads colors through the semantic
+ * tokens further down — nothing outside this file should contain a
+ * hex code or rgba() color literal.
+ */
+
+:root {
+  /* ---- Raw palette ---- */
+  --palette-5: #17202f;
+  --palette-5-rgb: 11, 19, 32;
+
+  --palette-4: #1f2a44;
+  --palette-4-rgb: 31, 42, 68;
+
+  --palette-1: #f2efe8;
+  --palette-1-rgb: 242, 239, 232;
+
+  --palette-2: #c7b8a6;
+  --palette-2-rgb: 199, 184, 166;
+
+  --palette-3: #b46a55;
+  --palette-3-rgb: 180, 106, 85;
+
+  /* ---- Semantic tokens (what components actually use) ---- */
+  --bg: var(--palette-5);
+  --bg-rgb: var(--palette-5-rgb);
+  --bg-card: rgba(var(--palette-1-rgb), 0.06);
+
+  --accent: var(--palette-3);
+  --accent-rgb: var(--palette-3-rgb);
+  --accent-light: var(--palette-2);
+  --accent-light-rgb: var(--palette-2-rgb);
+  --accent-dark: var(--palette-4);
+  --accent-dark-rgb: var(--palette-4-rgb);
+
+  --highlight: var(--palette-1);
+  --text: var(--palette-1);
+  --text-rgb: var(--palette-1-rgb);
+  --text-muted: var(--palette-2);
+
+  --border: rgba(var(--accent-rgb), 0.35);
+}
