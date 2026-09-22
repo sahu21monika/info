@@ -69,6 +69,17 @@
   font-size: 1rem;
 }
 
+.contact-error {
+  color: var(--accent-light);
+  font-size: 0.9rem;
+  margin-top: -8px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 @media (max-width: 600px) {
   .form-row { grid-template-columns: 1fr; }
 }

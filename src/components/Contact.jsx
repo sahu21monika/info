@@ -1,16 +1,29 @@
 import { useState } from 'react'
 import './Contact.css'
 
+const FORMSPREE_FORM_ID = 'mjykwjdy'
+
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
-  const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState('idle') // idle | sending | sent | error
 
   const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    // TODO: wire up to your preferred form service (EmailJS, Formspree, etc.)
-    setSent(true)
+    setStatus('sending')
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+        method: 'POST',
+        headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error('Form submission failed')
+      setStatus('sent')
+    } catch (err) {
+      console.error(err)
+      setStatus('error')
+    }
   }
 
   return (
@@ -20,7 +33,7 @@ export default function Contact() {
         Have a project in mind or just want to say hi? My inbox is always open.
       </p>
 
-      {sent ? (
+      {status === 'sent' ? (
         <div className="contact-success">
           Thanks for reaching out! I'll get back to you soon.
         </div>
@@ -45,7 +58,7 @@ export default function Contact() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="monika21.sahu@gmail.com"
+                placeholder="example@gmail.com"
                 value={form.email}
                 onChange={handleChange}
                 required
@@ -64,7 +77,14 @@ export default function Contact() {
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary">Send Message</button>
+          {status === 'error' && (
+            <p className="contact-error">
+              Something went wrong sending your message. Please try again, or email me directly.
+            </p>
+          )}
+          <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending...' : 'Send Message'}
+          </button>
         </form>
       )}
     </section>
